@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+p{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.green-container{
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+[class*=col-] .green{
+    background-color: rgba(0,225,101,255);
+    border: 1px solid rgba(0,108,250,255);
+}
+
+[class*=col-]{
+    background-color: rgba(0,108,250,255);
+    min-height: 50px;
+    position: relative;
+    border: 1px solid white;
+}
