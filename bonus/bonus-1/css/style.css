@@ -30,7 +30,7 @@ p{
     flex-wrap: wrap;
 }
 
-[class*=col-] .green{
+[class*=col-].green{
     background-color: rgba(0,225,101,255);
     border: 1px solid rgba(0,108,250,255);
 }
@@ -40,4 +40,62 @@ p{
     min-height: 50px;
     position: relative;
     border: 1px solid white;
+}
+
+/* Regole Alignment */
+
+.row.start{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.row.center{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   justify-content: center;
+}
+
+.row.end{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.tall{
+    min-height: 100px;
+}
+
+.short{
+    max-height: 50px;
+}
+
+.row.top{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   align-items: start;
+}
+
+.row.middle{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   align-items: center;
+}
+
+.row.bottom{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   align-items: end;
 }
